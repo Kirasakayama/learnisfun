@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Groups</title>
+
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+
+
+
+
+
+
+@keyframes zoomanimation{
+0%{
+transform: scale(0 , 0);
+
+}
+ 50%{
+transform: scale(110%,110%) ;
+
+ }
+
+100%{
+transform: scale(100%);
+
+}
+
+
+
+}
+
+
+.logo{ 
+
+animation: zoomanimation 0.8s ease-in-out both;
+
+}
+
+
+
+
+
+
+@keyframes slideanimation {
+0%{
+transform: translateX(-110px);
+}
+50%{
+transform: translateX(10px);
+}
+
+
+100%{
+transform: translateX(0px);
+}
+}
+
+
+.cow,.bunny{
+animation: slideanimation 0.6s ease-in-out both;
+
+}
+
+.lobster,.snake,.crocodile{
+  animation: slideanimation 0.7s ease-in-out both;  
+}
+.cat,.frog,.turtle,.snail{
+
+    animation: slideanimation 0.8s ease-in-out both; 
+
+}
+
+
+.logo{
+
+width: 80px;
+height: 80px;
+transition: width 0.5s , height 0.5s  , margin-left  0.5s , box-shadow 0.5s;
+cursor: pointer;
+border-radius: 80px;
+
+}
+
+
+.logo:hover{
+width: 95px;
+height: 95px;
+margin-left: -25px;
+box-shadow: 3px 3px 10px rgba(255, 98, 0, 0.76) ;
+
+}
+
+
+
+.logo:active{
+width: 90px;
+height: 90px;
+margin-left: -25px;
+opacity: 0.6;
+}
+.scroll::-webkit-scrollbar{
+width: 0;
+
+
+
+}
+
+
+body{
+background-image: url(https://static.vecteezy.com/system/resources/thumbnails/008/710/469/small_2x/pastel-abstract-background-in-blue-and-purple-free-vector.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+</style>
+
+</head>
+
+
+
+
+
+
+<body style="margin:0px;padding:0px;background-color: #AEE2FF;display: flex; width: auto; ;">
+    <!--side nav --> 
+    <aside style="background-color:rgba(255, 255, 255, 0.806); width: 10%; height:98vh; border-top-right-radius:40px ; border-bottom-right-radius: 40px;margin-top: 1vh; text-align: center; align-items: center;">
+        <div class="div1"  style="width: 80px;height: 80px; text-align: center;margin-left: 38px;margin-top: 10px;border-radius: 70px;" >
+        <img src="Background.png" alt="learn is fun logo"   class="logo">
+        </div>
+    <div style="overflow: scroll; height: 481px;margin-top: 25px;scrollbar-width:none;border-radius: 50px; " class="scroll">
+ <div style="  width: 120px; height: 120px;margin-top:25px;margin-left: 4px;margin-bottom: 4px;" class="cow">
+    
+    <img src="cow-6129375-5011619.png" alt="cow" clas="cow" style="width: 100px;height: 100px; margin-top:-20px;" id="cow">
+
+
+</div>
+ <div style=" width: 120px; height: 120px;margin-left: 4px;margin-bottom: 4px;" class="bunny"> 
+<img src="lobster.webp" alt="bunny" style="width: 100px;height: 100px; margin-top:-20px;" class="lobster">
+
+</div>
+
+ <div style=" width: 120px; height: 120px;margin-left: 4px;margin-bottom: 4px;" class="cat"> 
+
+     <img src="cat.webp" alt="cat" style="width: 100px;height: 100px; margin-top:-20px;" class="cat">
+
+</div>
+ <div style=" width: 120px; height: 120px;margin-left: 4px;margin-bottom: 4px;"> 
+
+    <img src="frog.webp" alt="cat" style="width: 100px;height: 100px; margin-top:-20px;" class="frog">
+
+</div>
+ <div style=" width: 120px; height: 120px;margin-left: 4px;margin-bottom: 4px;"> 
+
+    <img src="crocodile.webp" alt="cat" style="width: 100px;height: 100px; margin-top:-20px;" class="crocodile">
+
+</div>
+ <div style=" width: 120px; height: 120px;margin-left: 4px;margin-bottom: 4px;">
+
+<img src="snake.webp" alt="snake" style="width: 100px;height: 100px; margin-top:-20px;" class="snake">
+
+</div>
+ <div style=" width: 120px; height: 120px;margin-left: 4px;margin-bottom: 4px;">
+
+<img src="snail.png" alt="snail" style="width: 100px;height: 100px; margin-top:-20px;" class="snail">
+
+</div>
+ <div style=" width: 120px; height: 120px;margin-left: 4px;margin-bottom: 4px;"> 
+
+    <img src="bunny.webp" alt="bunny" style="width: 100px;height: 100px; margin-top:-20px;" class="bunny">
+
+</div>
+
+ <div style=" width: 120px; height: 120px;margin-left: 4px;margin-bottom: 4px;">  
+
+    <img src="turtle.webp" alt="turtle" style="width: 100px;height: 100px; margin-top:-20px;" class="turtle">
+
+</div>
+
+</div>
+    </aside> 
+<!-- header-->
+
+<div style="display: flex; flex-direction: column;width: 89.5%;">
+    
+<header style="background-color: rgba(255, 255, 255, 0.806);height: 100px; margin-top: 1vh; margin-left:4px; border-radius:40px;"></header>
+<section style="background-color: rgba(255, 255, 255, 0.806) ;height: 100%; border-radius: 40px;margin-left: 8px; margin-top: 4px;display:flex;position:relative;">
+
+<div style="width: 350px; height: 350px; border:1px rgb(7, 11, 255) dashed;border-radius: 500px;margin-left:10px;margin-top:30px;background-color: white;position:relative;" class="group1">
+
+    <div style="border: 1px rgb(7, 11, 255) dashed;border-radius: 80px; width: 120px; height : 120px;position: absolute;margin-left:200px;margin-top:70px;">   </div>
+    <div style="border: 1px rgb(7, 11, 255) dashed;border-radius: 80px; width: 120px; height : 120px;position: absolute;margin-top:70px;margin-left: 40px;">   </div>
+    <div style="border: 1px rgb(7, 11, 255) dashed;border-radius: 80px; width: 120px; height : 120px;position: absolute;margin-top: 200px;margin-left:115px;">   </div>
+
+
+</div>
+
+<div style="width: 350px; height: 350px; border:1px rgb(7, 11, 255) dashed;border-radius: 500px;margin-left:10px;margin-top:30px;background-color: white;" class="group2"> 
+
+    <div style="border: 1px rgb(7, 11, 255) dashed;border-radius: 80px; width: 120px; height : 120px;position: absolute;margin-left:200px;margin-top:70px;">   </div>
+    <div style="border: 1px rgb(7, 11, 255) dashed;border-radius: 80px; width: 120px; height : 120px;position: absolute;margin-top:70px;margin-left: 40px;">   </div>
+    <div style="border: 1px rgb(7, 11, 255) dashed;border-radius: 80px; width: 120px; height : 120px;position: absolute;margin-top: 200px;margin-left:115px;">   </div>
+
+
+</div>
+<div style="width: 350px; height: 350px; border:1px rgb(7, 11, 255) dashed;border-radius: 500px;margin-left:10px;margin-top:30px;background-color: white;" class="group3">  
+
+    <div style="border: 1px rgb(7, 11, 255) dashed;border-radius: 80px; width: 120px; height : 120px;position: absolute;margin-left:200px;margin-top:70px;">   </div>
+    <div style="border: 1px rgb(7, 11, 255) dashed;border-radius: 80px; width: 120px; height : 120px;position: absolute;margin-top:70px;margin-left: 40px;">   </div>
+    <div style="border: 1px rgb(7, 11, 255) dashed;border-radius: 80px; width: 120px; height : 120px;position: absolute;margin-top: 200px;margin-left:115px;">   </div>
+
+
+
+</div>
+
+
+
+<div style="border: 1px rgb(0, 0, 0) solid;width:100px;height:100px; position:absolute;bottom:0;margin-bottom:15px;left:10px;width: 350px;">    </div>
+<div style="border: 1px black solid;width:100px;height:100px; position:absolute;bottom:0;margin-bottom:15px;left:370px;width: 350px;">    </div>
+<div style="border: 1px black solid;width:100px;height:100px; position:absolute;bottom:0;margin-bottom:15px;left:730px;width: 350px;">    </div>
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- article->
+</body>
+</html>
